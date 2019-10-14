@@ -1,15 +1,19 @@
-﻿using System;
+using System;
 
 namespace open_lab_01._3
 {
     class Program
     {
+        public static int Addition(int a)
+        {
+            return (++a);
+        }
         static void Main(string[] args)
         {
-            string a = Console.ReadLine();
-            int b = int.Parse(a);
-            int c = ++b;
-            Console.WriteLine(c);
+            string line1 = Console.ReadLine();
+            int a = int.Parse(line1);
+            
+            Console.WriteLine(Addition(a));
         }
     }
 }
